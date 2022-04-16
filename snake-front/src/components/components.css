@@ -1,0 +1,28 @@
+.loginBar {
+    height: 50px;
+    background: linear-gradient(60deg, #26c6da, #00acc1);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px rgba(156, 39, 176,.4);
+  }
+  
+.usernameNavbar {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.levelNavbar {
+  margin-left: 20px;
+}
+
+.progressBar {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .progressBar {
+    width: 45%;
+  }
+}

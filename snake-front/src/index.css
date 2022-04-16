@@ -1,0 +1,158 @@
+#root{
+  height: 100%;
+  margin: 0px;
+  display: flex; 
+  flex-direction: column;  
+  align-items: stretch;
+}
+
+.basicContainerColor {
+  width: 100%;
+  flex-grow: 1;
+  background-color: #eee;
+}
+
+.basicContainerColorHome {
+  width: 100%;
+  flex-grow: 1;
+  background-color: #000;
+}
+
+svg, circle, path {
+  transition: all 0.02s linear;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.m_20px {
+  margin: 20px;
+}
+
+.mt_10px {
+  margin-top: 10px;
+}
+
+.mt_15px {
+  margin-top: 15px;
+}
+
+.mt_30px {
+  margin-top: 30px;
+}
+
+.mb_10px {
+  margin-bottom: 10px;
+}
+
+.m_0x20x10 {
+  margin: 0px 20px 10px;
+}
+
+.pd_10px {
+  padding: 10px;
+}
+
+.loginForm {
+  max-width: 300px;
+  margin: auto;
+}
+
+.loginFormForgot{
+  float: right;
+}
+
+.loginFormButton {
+  width: 100%;
+}
+
+.waitingRoomCard {
+  margin: auto;
+  margin-top: 200px;
+  max-width: 300px;
+}
+
+.square {
+  width: 300px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 0;
+  display: flex;
+  position: relative;
+  word-wrap: break-word;
+  background: #FFF;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 6px;
+  flex-direction: column;
+}
+
+.squareBody {
+  flex: 1 1 auto;
+  padding: 0.9375rem 20px;
+  position: relative;
+  -webkit-box-flex: 1;
+}
+
+.squareTitle {
+  padding: 15px;
+  margin-top: -30px;
+  border-radius: 3px;
+  font-size: initial;
+  color: white;
+  background: linear-gradient(60deg, #26c6da, #00acc1);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px rgba(156, 39, 176,.4);
+}
+
+.standardTitle {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  margin: 20px 10px 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.large {
+  font-size: large;
+}
+
+.imageHead {
+  background-image: url(/src/images/snakeHead.png);
+  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%, cover;
+  height: 500px;
+  background-color: black;
+  text-align: center;
+}
+
+.titleHome {
+  color: white;
+  font-weight: bold;
+  padding-top: 440px;
+  font-size: 45px;
+}
+
+.marginAuto {
+  margin: auto;
+}
+
+.displayFlex {
+  display: flex;
+} 
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+    
