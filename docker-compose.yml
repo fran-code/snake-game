@@ -1,0 +1,25 @@
+version: "3"
+services:
+    client:
+        build:
+            context: ./snake-front
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - backend
+    backend:
+        build:
+            context: ./snake-api
+            dockerfile: Dockerfile
+        ports:
+            - "3003:3003"
+            - "3004:3004"
+        depends_on:
+            - db
+        restart: always
+    db:
+        image: mongo:4.2
+        container_name: mongo-db
+        volumes:
+            - ./data/db:/data/db
+        restart: always
