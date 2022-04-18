@@ -21,6 +21,8 @@ services:
         restart: always
     db:
         image: mongo:4.2
+        ports:
+            - "27017:27017"
         container_name: mongo-db
         volumes:
             - ./data/db:/data/db
