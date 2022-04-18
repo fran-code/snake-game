@@ -10,6 +10,5 @@ export const SockerInit = (username, roomId, password, action, options) => {
         path: '/classic-mode',
         query: { username, roomId, password, action, token, options: JSON.stringify(options) }
     });
-    console.log("socket:: ", socket)
     return socket;
 }

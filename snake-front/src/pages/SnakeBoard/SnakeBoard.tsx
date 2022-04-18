@@ -310,7 +310,7 @@ const SnakeBoard: React.FC = () => {
   }, []);
 
   if (!socketConnection) return <FullPageSpinner />
-console.log("snakeHead:: ", snakeHead)
+
   return (
     <>
       <svg viewBox="0 0 1200 640" preserveAspectRatio="none" style={{ width: '100%', height: '100%', backgroundColor }}>

@@ -11,7 +11,11 @@ const loginUser = (values: { email: string, password: string }) => {
 };
 
 const registerUser = (values: { password: string, username: string, email: string }) => {
-  apiAuthCall(constants.endpoints.register, values)
+  if (values.password.length < 8) {
+    message.warning("The password has to be at least 8 characters long");
+  } else {
+    apiAuthCall(constants.endpoints.register, values)
+  }
 };
 
 const apiAuthCall = (endpoint: string, values: { email: string, password: string, username?: string }) => {
@@ -64,7 +68,7 @@ const LoginForm = () => {
                   />
                 </Form.Item>
                 <div className="mb_10px textCenter">
-                  Or <a onClick={() => setCurrentKey("2")}>register now!</a>
+                  Or <a onClick={() => setCurrentKey("register")}>register now!</a>
                 </div>
                 <Form.Item>
                   <Button type="primary" htmlType="submit" className="loginFormButton">
@@ -101,10 +105,13 @@ const LoginForm = () => {
                     placeholder="Password"
                   />
                 </Form.Item>
-                <Form.Item>
-                  <Form.Item name="politics" valuePropName="checked" noStyle>
-                    <Checkbox>I agree to the Privacy Policy</Checkbox>
-                  </Form.Item>
+                <Form.Item
+                  name="politics"
+                  valuePropName="checked"
+                  rules={[{ required: true, message: 'You must accept the privacy policy' }]}
+                  style={{ marginBottom: "15px" }}
+                >
+                  <Checkbox>I agree to the Privacy Policy</Checkbox>
                 </Form.Item>
                 <Form.Item>
                   <Button type="primary" htmlType="submit" className="loginFormButton">

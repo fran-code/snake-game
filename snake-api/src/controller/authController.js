@@ -15,9 +15,14 @@ const authController = {
             }
 
             const checkEmail = await checkExisting({ email });
+            const checkUsername = await checkExisting({ username });
 
             if (checkEmail) {
-                return res.status(403).json({ message: "email already exists" })
+                return res.status(403).json({ message: "Email already exists" })
+            }
+
+            if (checkUsername) {
+                return res.status(403).json({ message: "Username already exists" })
             }
 
             const hash = bcrypt.hashSync(password, Number(SALT_ROUNDS));

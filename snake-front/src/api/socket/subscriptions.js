@@ -59,42 +59,36 @@ export const subscribeTo = {
 
   getWeapon: cb => {
     socketConnection.on('get-weapon', item => {
-      console.log(item);
       cb(null, item);
     });
   },
 
   getPassive: cb => {
     socketConnection.on('get-passive', item => {
-      console.log(item);
       cb(null, item);
     });
   },
 
   updateAmmo: cb => {
     socketConnection.on('update-ammo', item => {
-      console.log(item);
       cb(null, item);
     });
   },
 
   updateUses: cb => {
     socketConnection.on('update-uses', item => {
-      console.log(item);
       cb(null, item);
     });
   },
 
   showPlayers: cb => {
     socketConnection.on('show-players', item => {
-      console.log(item);
       cb(null, item);
     });
   },
 
   setRoomId: cb => {
     socketConnection.on('set-roomId', item => {
-      console.log(item);
       cb(null, item);
     });
   },
