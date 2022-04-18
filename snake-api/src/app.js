@@ -25,6 +25,8 @@ app.use((err, _req, res, _) => {
     handleError(err, res);
 });
 
+logger.info("env: ", process.env.NODE_ENV)
+
 app.listen(API_PORT, () => {
     logger.info(`Api listening on port ${Number(API_PORT)}!`);
 });
