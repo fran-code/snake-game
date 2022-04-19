@@ -3,7 +3,6 @@ import { ITokenAuthData } from './interfaces';
 import { message } from "antd";
 import { apiUrl } from '../env';
 
-//Hace una llamda con axios con los parámetros facilitados
 export const apiCall = async (
     endpoint: string,
     {
