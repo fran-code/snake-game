@@ -88,13 +88,13 @@ const LoginForm = () => {
                   name="email"
                   rules={[{ required: true, type: "email", message: 'Please input your Email!' }]}
                 >
-                  <Input prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Email" />
+                  <Input prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Registration Email" />
                 </Form.Item>
                 <Form.Item
                   name="username"
                   rules={[{ required: true, message: 'Please input your Username!' }]}
                 >
-                  <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+                  <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Registration Username" />
                 </Form.Item>
                 <Form.Item
                   name="password"
@@ -102,7 +102,7 @@ const LoginForm = () => {
                 >
                   <Input.Password
                     prefix={<LockOutlined className="site-form-item-icon" />}
-                    placeholder="Password"
+                    placeholder="Registration Password"
                   />
                 </Form.Item>
                 <Form.Item
